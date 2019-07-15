@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1002 A+B for Polynomials.py</StartupFile>
+    <StartupFile>1003 Emergency.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,6 +23,9 @@
   <ItemGroup>
     <Compile Include="1001 A+B Format.py" />
     <Compile Include="1002 A+B for Polynomials.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1003 Emergency.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
