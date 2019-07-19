@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1004 Counting Leaves.py</StartupFile>
+    <StartupFile>1005 Spell It Right.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,6 +29,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="1004 Counting Leaves.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1005 Spell It Right.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
