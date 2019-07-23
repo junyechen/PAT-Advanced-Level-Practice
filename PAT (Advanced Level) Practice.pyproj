@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1006 Sign In and Sign Out.py</StartupFile>
+    <StartupFile>1007 Maximum Subsequence Sum.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="1006 Sign In and Sign Out.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1007 Maximum Subsequence Sum.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
