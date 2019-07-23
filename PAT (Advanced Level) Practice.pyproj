@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1007 Maximum Subsequence Sum.py</StartupFile>
+    <StartupFile>1008 Elevator.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="1007 Maximum Subsequence Sum.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1008 Elevator.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
