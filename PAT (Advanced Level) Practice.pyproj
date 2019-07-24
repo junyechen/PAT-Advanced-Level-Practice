@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1009 Product of Polynomials.py</StartupFile>
+    <StartupFile>1010 Radix.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -44,6 +44,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="1009 Product of Polynomials.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1010 Radix.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
