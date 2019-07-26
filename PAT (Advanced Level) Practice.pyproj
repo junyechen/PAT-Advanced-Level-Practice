@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1010 Radix.py</StartupFile>
+    <StartupFile>1011 World Cup Betting.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -47,6 +47,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="1010 Radix.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1011 World Cup Betting.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
