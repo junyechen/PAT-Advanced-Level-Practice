@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6f745c84-9cd4-4ad6-a014-939b2c80ca14</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1012 The Best Rank.py</StartupFile>
+    <StartupFile>1014 Waiting in Line.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -53,6 +53,12 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="1012 The Best Rank.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1013 Battle Over Cities.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="1014 Waiting in Line.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
