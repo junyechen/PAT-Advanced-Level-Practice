@@ -56,7 +56,7 @@ ans = [0] * (K + 1)
 cnt = 1
 for j in range(M):
     for i in range(N):
-        if cnt <= K:    #很关键，测试点2,3,4就是考虑黄线没填满的情况
+        if cnt <= K:  # 很关键，测试点2,3,4就是考虑黄线没填满的情况
             if j == 0:
                 pop[i] = time[cnt - 1]
             queues[i][j] = cnt
@@ -68,14 +68,14 @@ while cnt <= K:
     queues[minwin].pop(0)
     pop[minwin] += time[queues[minwin][0] - 1]
     queues[minwin].append(cnt)
-    end[minwin]+=time[cnt - 1]
+    end[minwin] += time[cnt - 1]
     ans[cnt] = end[minwin]
     cnt += 1
 for i in q:
     if ans[i] - time[i - 1] >= 540:
         print('Sorry')
     else:
-        print("%02d:%02d" % (8 + ans[i] // 60,ans[i] % 60))
+        print("%02d:%02d" % (8 + ans[i] // 60, ans[i] % 60))
 
 #################################################################################
 """
