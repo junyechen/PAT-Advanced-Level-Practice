@@ -25,3 +25,27 @@ Yes
 Yes
 No
 """
+
+prime = [1] * 1048577
+prime[0] = 0
+prime[1] = 0
+for i in [4, 1048578, 2]:
+    prime[i] = 0
+for i in [3, 1048578, 2]:
+    if prime[i] == 1:
+        for j in [i + i * 2, 1048578, i * 2]:
+            prime[j] = 0
+while True:
+    line = input()
+    if line[0] == '-':
+        break
+    else:
+        num, radix = [int(i) for i in line.split()]
+        num_ = 0
+        while num != 0:
+            num_ = num_ * radix + num % radix
+            num = num // radix
+        if prime[num_] == 1:
+            print("Yes")
+        else:
+            print("No")
