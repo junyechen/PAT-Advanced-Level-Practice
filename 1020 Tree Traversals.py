@@ -19,6 +19,13 @@ Sample Output:
 4 1 6 3 5 7 2
 """
 
+###################################################################
+"""
+本题相对简单，一次通过
+复习python的class声明和运用，复习二叉树的先中后序遍历与层序遍历
+"""
+###################################################################
+
 
 class Node:
     def __init__(self, value='', left_node=None, right_node=None):
@@ -38,19 +45,22 @@ def tree(i_order, p_order):
     return root_
 
 
-def levelorder(root_, level_order):
-    if root_:
-        level_order.append(root_.value)
-        levelorder(root_.leftNode, level_order)
-        levelorder(root_.rightNode, level_order)
-    else:
-        return
+def levelorder(root_):
+    que = [root_]
+    l_order = []
+    while que:
+        temp = que.pop(0)
+        l_order.append(temp.value)
+        if temp.leftNode:
+            que.append(temp.leftNode)
+        if temp.rightNode:
+            que.append(temp.rightNode)
+    return l_order
 
 
 N = int(input())
 post_order = input().split()
 in_order = input().split()
 root = tree(in_order, post_order)
-level_order = []
-levelorder(root, level_order)
+level_order = levelorder(root)
 print(' '.join(level_order))
