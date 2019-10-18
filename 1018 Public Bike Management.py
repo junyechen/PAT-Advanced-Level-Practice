@@ -84,6 +84,7 @@ Sample Output:
 """
 本题采用dijkstra求最短路径+DFS深度优先遍历，获取所有最短路径，从而计算所需自行车数
 不清楚为何有大部分运算错误以及非零返回
+在牛客网上提交代码后，提示151行 for node in routine[path[0][0]]: 中routine下标溢出，回头查看path加上routine编号时，用的是变量j而不是i。。。崩溃、、、
 """
 #########################################################################################
 
@@ -142,7 +143,7 @@ for i in range(len(routine)):
         if bike_remain <= 0:
             bike_need += -bike_remain
             bike_remain = 0
-    path.append([j, bike_need, bike_remain])
+    path.append([i, bike_need, bike_remain])
     bike_remain, bike_need = 0, 0
 path.sort(key=lambda x: (x[1], x[2]))
 print(path[0][1], 0, end='')
