@@ -59,5 +59,21 @@ LOR6
 ZOE1
 """
 
+##################################################
+"""
+非常简单，一次通过
+"""
+##################################################
 
-
+n, k = map(int, input().split())
+course_list = [[] for _ in range(k)]
+for _ in range(n):
+    temp = input().split()
+    for i in temp[2:]:
+        course_list[int(i) - 1].append(temp[0])
+for i in range(k):
+    print(i + 1, len(course_list[i]))
+    if len(course_list[i]) == 0:
+        continue
+    course_list[i].sort()
+    print('\n'.join(course_list[i]))
