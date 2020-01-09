@@ -40,6 +40,7 @@ Sample Output:
 """
 ###############################################################
 
+
 def get_post_order_via_pre_in(p_order, i_order):
     if p_order:
         left_length = i_order.index(p_order[0])
