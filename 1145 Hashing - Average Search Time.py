@@ -27,6 +27,8 @@ Sample Output:
     当找不到数字时，则查找次数还要+1
     在这个点卡了很久！
 """
+
+
 #######################################################################
 
 
@@ -60,7 +62,7 @@ for number in list(map(int, input().split())):
         print(number, 'cannot be inserted.')
 search_time = 0
 for number in list(map(int, input().split())):
-    for increment in range(table_size+1):
+    for increment in range(table_size + 1):
         search_time += 1
         pos = (number + increment * increment) % table_size
         if hashing[pos] == number or hashing[pos] == '':
