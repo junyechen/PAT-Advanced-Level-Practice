@@ -40,8 +40,8 @@ Sample Output:
 ##################################################
 
 n, m = map(int, input().split())
-route_in = [0 for _ in range(n+1)]
-route_out = [[] for _ in range(n+1)]
+route_in = [0 for _ in range(n + 1)]
+route_out = [[] for _ in range(n + 1)]
 for _ in range(m):
     a, b = map(int, input().split())
     route_in[b] += 1
@@ -58,7 +58,6 @@ for i in range(int(input())):
             for node_ in route_out_copy[node]:
                 route_in_copy[node_] -= 1
 print(*res)
-
 
 ##############################################
 """
